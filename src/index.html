@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body onload="init()">
   <div data-role="page">
 
     <div data-role="header">
@@ -24,7 +24,7 @@
     <div data-role="footer" data-position="fixed">
       <div data-role="navbar" data-iconpos="top">
         <ul>
-          <li><a id="btnInicio" data-icon="home" onclick="btnInicioClick();">Inicio</a></li>
+          <li><a id="btnInicio" data-icon="home" onclick="btnInicioClick();" class="ui-btn-active">Inicio</a></li>
           <li><a id="btnCalendario"  data-icon="calendar">Calendario</a></li>
           <li><a id="btnNoticias" data-icon="comment">Noticias</a></li>
           <li><a id="btnPerfil" data-icon="user">Perfil</a></li>
