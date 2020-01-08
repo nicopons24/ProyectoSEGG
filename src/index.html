@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/funcionBotones.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script src="js/funcionBotones.js"></script>
+
 </head>
 
 <body>
@@ -22,7 +24,7 @@
     <div data-role="footer" data-position="fixed">
       <div data-role="navbar" data-iconpos="top">
         <ul>
-          <li><a id="btnInicio" data-icon="home" href="planing.html">Inicio</a></li>
+          <li><a id="btnInicio" data-icon="home" onclick="btnInicioClick();">Inicio</a></li>
           <li><a id="btnCalendario"  data-icon="calendar">Calendario</a></li>
           <li><a id="btnNoticias" data-icon="comment">Noticias</a></li>
           <li><a id="btnPerfil" data-icon="user">Perfil</a></li>
