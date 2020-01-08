@@ -10,6 +10,6 @@ function btnInicioClick(){
 }
 
 function init(){
-	console.log("onload")
+	console.log("onload");
 	btnInicioClick();
 }
