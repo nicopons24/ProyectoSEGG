@@ -36,6 +36,30 @@ function btnNoticiasClick(){
 	});
 }
 
+function itemNoticiaClick(){
+	$("#title").text(function(i, text) {
+		return "Sociedad Española de Geriatría y Gerontología";
+	});
+	$.ajax({
+		url : 'publicacionSEGGDetalle.html',
+		success : function(data) {
+			$(".ui-content").html(data);
+		}
+	});
+}
+
+function btnPersonasClick(){
+	$("#title").text(function(i, text) {
+		return "Lista personas";
+	});
+	$.ajax({
+		url : 'listaPersonas.html',
+		success : function(data) {
+			$(".ui-content").html(data);
+		}
+	});
+}
+
 function init() {
 	btnInicioClick();
 };

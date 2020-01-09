@@ -14,15 +14,15 @@
 	<body onload="init();">
 		<div data-role="page" id="main">
 
-			<div data-role="header">
+			<div data-role="header" data-tap-toggle="false">
 				<h1 id="title">App SEGG</h1>
 			</div>
 
-			<div data-role="main" class="ui-content" id="principal">
+			<div data-role="main" class="ui-content" id="principal" data-tap-toggle="false">
 				<!--Se ira cambiando segun el boton del menu que se pulse-->
 			</div>
 
-			<div data-role="footer" data-position="fixed">
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false">
 				<div data-role="navbar" data-iconpos="top">
 					<ul>
 						<li>
@@ -35,7 +35,7 @@
 							<a id="btnNoticias" data-icon="comment" onclick="btnNoticiasClick();">Noticias</a>
 						</li>
 						<li>
-							<a id="btnPerfil" data-icon="user">Personas</a>
+							<a id="btnPerfil" data-icon="user" onclick="btnPersonasClick();">Personas</a>
 						</li>
 					</ul>
 				</div>
