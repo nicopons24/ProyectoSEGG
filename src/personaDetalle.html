@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/funcionBotones.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+	<style type="text/css" media="screen">
+        td{
+            border-bottom:1px solid #eee;
+            padding:10px;
+			text-align: left;
+        }
+        body{
+            font-family: Arial, "MS Trebuchet", sans-serif;
+			font-size: 120%;
+			background: black;
+        }
+        table{
+            border:1px solid #bbb;
+			width: 100%;
+			font-size: 80%;
+        }
+		img{
+			width: 40%;
+		}
+		dt{
+			font-weight: bold;
+			font-size: 80%;
+			margin: 5% 0 2% 0;
+		}
+		dd{
+			font-size: 80%;
+		}
+		
+    </style>
+
+
+</head>
+
+<body onload="init()">
+  <div data-role="page">
+
+    <div data-role="header">
+      <h1>Ficha Medica</h1>
+    </div>
+
+    <div data-role="main" class="ui-content" id="principal">
+      <!--Se ira cambiando segun el boton del menu que se pulse-->
+	  <table border="0" cellspacing="0" cellpadding="0" >
+        <tr>
+            <td><b>Nombre: </b></td>
+            <td>Pedro </td>
+        </tr>
+		<tr>
+            <td><b>Apellidos: </b></td>
+            <td>Fernandez Ramos</td>
+        </tr>
+		<tr>
+            <td><b>Edad:</b></td>
+            <td>84</td>
+        </tr>
+		<tr>
+            <td><b>Sexo:</b></td>
+            <td>Hombre</td>
+        </tr>
+		<tr>
+            <td><b>Peso: </b></td>
+            <td>75 Kg</td>
+        </tr>
+		<tr>
+            <td><b>Estatura:</b></td>
+            <td>173 cm</td>
+        </tr>
+		<tr>
+            <td><b>Grupo sanguineo:</b></td>
+            <td>O+</td>
+        </tr>
+    </table>
+	<dl>
+		<dt>Enfermedades padecidas:</dt>
+			<dd>Varicela (padecia)</dd>
+			<dd>Asma (actual)</dd>
+			<dd>Artritis (actual)</dd>
+			<dd>Hipertension (actual)</dd>
+		<dt>Alergias conocidas:</dt>
+			<dd>Ninguna</dd>
+		<dt>Tratamientos:</dt>
+			<dd>Tratamiento regular contra la artritis</dd>
+		<dt>Medicamentos:</dt>
+			<dd>Enalapril</dd>
+			<dd>Fosinopril</dd>
+			<dd>Lisinopril</dd>
+			<dd>Prednisona</dd>
+  </dl>
+	
+
+    </div>
+	
+	
+	
+
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar" data-iconpos="top">
+        <ul>
+          <li><a id="btnInicio" data-icon="home" onclick="btnInicioClick();" class="ui-btn-active">Inicio</a></li>
+          <li><a id="btnCalendario"  data-icon="calendar">Calendario</a></li>
+          <li><a id="btnNoticias" data-icon="comment">Noticias</a></li>
+          <li><a id="btnPerfil" data-icon="user">Perfil</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

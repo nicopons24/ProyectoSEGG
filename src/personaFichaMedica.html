@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/funcionBotones.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+	<style type="text/css" media="screen">
+        body{
+            font-family: Arial, "MS Trebuchet", sans-serif;
+			color: #1C1C1C;
+			font-size: 120%;
+        }
+        img{
+			width: 30%;
+		}
+		hr {
+			border: none;
+			background-color: #878585;
+			color: #878585;
+			height: 2px;
+		}
+		
+		a.button1 {
+			font-size: 80%;
+			font-weight: 700;
+			color: #1C1C1C;
+			text-decoration: none;
+			padding: .4em 1em calc(.4em + 3px);
+			border-radius: 3px;
+			background: #CCC8C8;
+			box-shadow: 0 -3px #BCBCBC inset;
+		} 
+		td{
+            border-bottom:1px solid #eee;
+            padding:10px;
+			text-align: center;
+        }
+        table{
+            border:1px solid #bbb;
+			width: 100%;
+			font-size: 80%;
+        }
+}
+    </style>
+
+
+</head>
+
+<body onload="init()">
+  <div data-role="page">
+
+    <div data-role="header">
+      <h1>Ficha Medica</h1>
+    </div>
+
+    <div data-role="main" class="ui-content" id="principal">
+      <!--Se ira cambiando segun el boton del menu que se pulse-->
+	  <center>
+	  <img src="img/usuario.png"><p>Pedro Fernandez Ramos
+	  <p> <a href="personaDetalle.html" class="button1">Ver ficha completa</a>
+	  </center>
+	  Proximas citas:<br>
+	  <table border="0" cellspacing="0" cellpadding="0" >
+        <tr>
+            <td>Jue,  5 Dic, 12:50</td>
+            <td>Cita con el oculista</td>
+        </tr>
+		<tr>
+            <td>Mar,  21 Ene, 16:00</td>
+            <td>Revision general periodica</td>
+        </tr>
+    </table>
+	<hr>
+	<br>Medicamentos:<br>
+	<table border="0" cellspacing="0" cellpadding="0" >
+        <tr>
+            <td><b>2 / dia</b></td>
+            <td><b>Enalapril</b> 20 mg</td>
+        </tr>
+		<tr>
+            <td><b>1 / dia</b></td>
+            <td><b>Fosinopril</b> 10 mg</td>
+        </tr>
+		<tr>
+            <td><b>1 / dia</b></td>
+            <td><b>Lisinopril</b> 20 mg</td>
+        </tr>
+    </table>
+    </div>
+	
+	
+	
+
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar" data-iconpos="top">
+        <ul>
+          <li><a id="btnInicio" data-icon="home" onclick="btnInicioClick();" class="ui-btn-active">Inicio</a></li>
+          <li><a id="btnCalendario"  data-icon="calendar">Calendario</a></li>
+          <li><a id="btnNoticias" data-icon="comment">Noticias</a></li>
+          <li><a id="btnPerfil" data-icon="user">Perfil</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
