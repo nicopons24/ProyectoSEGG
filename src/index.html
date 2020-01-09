@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/btnAddStyle.css">
-  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script type="text/javascript" src="js/funcionBotones.js"></script>
-  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/btnAddStyle.css">
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/funcionBotones.js"></script>  
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<link rel="stylesheet"  href="http://code.jquery.com/mobile/git/jquery.mobile-git.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
 
-<body onload="init();">
-  <div data-role="page" id="main">
+	<body onload="init();">
+		<div data-role="page" id="main">
 
-    <div data-role="header">
-      <h1 id="title">App SEGG</h1>
-    </div>
+			<div data-role="header">
+				<h1 id="title">App SEGG</h1>
+			</div>
 
-    <div data-role="main" class="ui-content" id="principal">
-      <!--Se ira cambiando segun el boton del menu que se pulse-->
-    </div>
+			<div data-role="main" class="ui-content" id="principal">
+				<!--Se ira cambiando segun el boton del menu que se pulse-->
+			</div>
 
-    <div data-role="footer" data-position="fixed">
-      <div data-role="navbar" data-iconpos="top">
-        <ul>
-          <li><a id="btnInicio" data-icon="home" onclick="btnInicioClick();" class="ui-btn-active">Inicio</a></li>
-          <li><a id="btnCalendario"  data-icon="calendar">Calendario</a></li>
-          <li><a id="btnNoticias" data-icon="comment">Noticias</a></li>
-          <li><a id="btnPerfil" data-icon="user">Perfil</a></li>
-        </ul>
-      </div>
-    </div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar" data-iconpos="top">
+					<ul>
+						<li>
+							<a id="btnInicio" data-icon="home" onclick="btnInicioClick();" class="ui-btn-active">Inicio</a>
+						</li>
+						<li>
+							<a id="btnCalendario"  data-icon="calendar">Calendario</a>
+						</li>
+						<li>
+							<a id="btnNoticias" data-icon="comment">Noticias</a>
+						</li>
+						<li>
+							<a id="btnPerfil" data-icon="user">Perfil</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-  </div>
-</body>
+		</div>
+	</body>
 </html>
