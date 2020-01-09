@@ -1,28 +1,51 @@
-<div>
-	<label for="date">Fecha:</label>
-	<input type="date" name="date" id="date" data-inline="true" value="">
-</div>
-<div>
-	<label for="text-basic">Text input:</label>
-	<input type="text" name="text-basic" id="hora" value="">
-</div>
-<div>
-	<label for="slider-flip-m">Mini flip switch:</label>
-	<select name="slider-flip-m" id="notificar" data-role="slider" data-inline="true" data-mini="true">
-		    <option value="off">No</option>
-		    <option value="on" selected="">Si</option>
-	</select>
-</div>
-<div>
-	<label for="select-choice-mini" class="select">Duración de la notificación</label>
-	<select name="select-choice-mini" id="duracion" data-mini="true" data-inline="true">
-		    <option value="standard">10 min</option>
-		    <option value="rush">30 min</option>
-		    <option value="express">1 hora</option>
-		    <option value="overnight">2 horas</option>
-	</select>
-</div>
-<div>
-	<label for="textarea">Textarea:</label>
-	<textarea cols="15" rows="4" name="textarea" id="textarea"></textarea>
-</div>
+<form action="" method="post">
+	<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+		<input placeholder="Fecha: dd/mm/yy" type="text" name="name" id="name" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset ui-fullsize" >
+
+		<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+			<input placeholder="Hora: hh:mm" type="text" name="name" id="name" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset ui-fullsize" >
+		</div>
+		<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+			<div class="ui-controlgroup-controls">
+
+				<div class="ui-checkbox">
+					<input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom">
+					<label for="checkbox-1a" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="checkbox-off" data-theme="c" class="ui-btn ui-fullsize ui-btn-icon-left ui-checkbox-off ui-corner-top ui-btn-up-c"> <span class="ui-btn-inner ui-corner-top"> <span class="ui-btn-text">Notificarme</span> <span class="ui-icon ui-icon-checkbox-off ui-icon-shadow">&nbsp;</span> </span> </label>
+				</div>
+
+			</div>
+		</div>
+		<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+			<label for="select-choice-1" class="select ui-select">Avisarme cuando falten:</label>
+			<div class="ui-select">
+				<div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-right ui-btn-up-c">
+					<span class="ui-btn-inner ui-btn-corner-all"> <span class="ui-btn-text"><span>10 Min</span></span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span></span>
+					<select name="select-choice-1" id="select-choice-1">
+						<option value="standard">10 Min</option>
+						<option value="rush">30 Min</option>
+						<option value="express">1 Hora</option>
+						<option value="overnight">Nunca</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+			<textarea cols="40" rows="8" name="textarea" id="textarea" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+			
+		</textarea>
+		</div>
+		<div class="ui-body">
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a">
+					<div data-corners="true" class="ui-btn ui-shadow ui-btn-corner-all ui-submit ui-btn-up-d">
+						<span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Cancelar</span></span>
+					</div>
+				</div>
+				<div class="ui-block-b">
+					<div data-corners="true" class="ui-btn ui-shadow ui-btn-corner-all ui-submit ui-btn-up-a">
+						<span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Guardar</span></span>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+</form>
