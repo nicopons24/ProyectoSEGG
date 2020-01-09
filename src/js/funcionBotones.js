@@ -3,7 +3,7 @@ function btnInicioClick() {
 		var days=["Lun", "Mar","Mie","Jue","Vie","Sab","Dom"];
 		var months = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
 		var today = new Date();
-		return days[today.getDay()]+" " + today.getDate() + ' de ' + months[(today.getMonth() + 1)] + ' de ' + today.getFullYear();
+		return days[today.getDay()]+" " + today.getDate() + ' de ' + months[(today.getMonth())] + ' de ' + today.getFullYear();
 	});
 
 	$.ajax({
@@ -91,10 +91,17 @@ function btnCalendarioClick(){
 		return "Calendario";
 	});
 	$.ajax({
-		url : 'calendaro.html',
+		url : 'calendario.html',
 		success : function(data) {
 			$(".ui-content").html(data);
 		}
+	});
+}
+
+function itemCalendarClick(dia){
+	console.log("pulsado "+dia);
+	$("#planingDia").text(function(i, text) {
+		return "Planning dia "+dia+":";
 	});
 }
 

@@ -1,13 +1,20 @@
 
       .celda{
-          border-bottom:1px solid #eee;
+          border-bottom:1px solid #EEEEEE;
           padding:10px;
     text-align: center;
       }
       .celdaHistorial{
-        border-bottom:1px solid #eee;
+        border-bottom:1px solid #EEEEEE;
         padding:10px;
   text-align: left;
+      }
+      .celdaBorde{
+        border:1px solid #8E8E8E;
+        padding: 8px;
+        margin: 0px;
+        font-size: 120%;
+        text-align: center;
       }
   .persona{
     width: 40%;

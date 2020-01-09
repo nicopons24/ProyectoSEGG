@@ -1,1 +1,96 @@
-<p>calendrio</p>
+<ul data-role="listview" class="ui-listview">
+<li id="mes" data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-b" style="text-align:center">Mes</li>
+</ul>
+&nbsp;
+<table data-role="table" data-mode="reflow" width="95%" id="cal">
+<thead>
+  <tr >
+    <th class="celdaBorde">L</th>
+    <th class="celdaBorde">M</th>
+    <th class="celdaBorde">X</th>
+    <th class="celdaBorde">J</th>
+    <th class="celdaBorde">V</th>
+    <th class="celdaBorde">S</th>
+    <th class="celdaBorde">D</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="celdaBorde"></td>
+    <td class="celdaBorde"></td>
+    <td class="celdaBorde" onclick="itemCalendarClick()">1</td>
+    <td class="celdaBorde">2</td>
+    <td class="celdaBorde">3</td>
+    <td class="celdaBorde">4</td>
+    <td class="celdaBorde">5</td>
+  </tr>
+  <tr>
+    <td class="celdaBorde">6</td>
+    <td class="celdaBorde">7</td>
+    <td class="celdaBorde">8</td>
+    <td class="celdaBorde">9</td>
+    <td class="celdaBorde">10</td>
+    <td class="celdaBorde">11</td>
+    <td class="celdaBorde">12</td>
+  </tr>
+  <tr>
+    <td class="celdaBorde">13</td>
+    <td class="celdaBorde">14</td>
+    <td class="celdaBorde">51</td>
+    <td class="celdaBorde">16</td>
+    <td class="celdaBorde">17</td>
+    <td class="celdaBorde">18</td>
+    <td class="celdaBorde">19</td>
+  </tr>
+  <tr>
+    <td class="celdaBorde">20</td>
+    <td class="celdaBorde">21</td>
+    <td class="celdaBorde">22</td>
+    <td class="celdaBorde">23</td>
+    <td class="celdaBorde">24</td>
+    <td class="celdaBorde">25</td>
+    <td class="celdaBorde">26</td>
+  </tr>
+  <tr>
+    <td class="celdaBorde">27</td>
+    <td class="celdaBorde">28</td>
+    <td class="celdaBorde">29</td>
+    <td class="celdaBorde">30</td>
+    <td class="celdaBorde">31</td>
+    <td class="celdaBorde"></td>
+    <td class="celdaBorde"></td>
+  </tr>
+</tbody>
+</table>
+&nbsp;
+<ul data-role="listview" class="ui-listview">
+<li id="planingDia" data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-b" style="text-align:center">Planing: </li>
+<li class="ui-li ui-li-static">
+  <h3 class="ui-li-heading"><strong>12:50</strong>PM</h3>
+  <p class="ui-li-desc">
+    Cita oculista con el Señor Pedro
+  </p>
+<li class="ui-li ui-li-static">
+  <h3 class="ui-li-heading"><strong>13:30</strong>PM</h3>
+  <p class="ui-li-desc">
+    Turno supervision de comida
+  </p>
+</li>
+<li class="ui-li ui-li-static ui-li-last">
+  <h3 class="ui-li-heading"><strong>16:00</strong>PM</h3>
+  <p class="ui-li-desc">
+    Visita a la señora francisca
+  </p>
+</li>
+</ul>
+<script type="text/javascript">
+  $("#mes").text(function(i, text) {
+		var months = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+		var today = new Date();
+		return months[(today.getMonth())];
+	});
+  $('#cal.celdaBorde').each(function(){
+    var n = $(this).text();
+    $(this).bind("click",itemCalendarClick(n));
+  });
+</script>
