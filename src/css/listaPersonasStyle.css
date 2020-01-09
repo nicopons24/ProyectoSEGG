@@ -1,0 +1,14 @@
+
+      .celda{
+          border-bottom:1px solid #eee;
+          padding:10px;
+    text-align: center;
+      }
+      .celdaHistorial{
+        border-bottom:1px solid #eee;
+        padding:10px;
+  text-align: left;
+      }
+  .persona{
+    width: 40%;
+  }

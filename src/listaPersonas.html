@@ -1,78 +1,43 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script type="text/javascript" src="js/funcionBotones.js"></script>
-  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-	<style type="text/css" media="screen">
-        td{
-            border-bottom:1px solid #eee;
-            padding:10px;
-			text-align: center;
-        }
-        body{
-            font-family: Arial, "MS Trebuchet", sans-serif;
-        }
-        table{
-            border:1px solid #bbb;
-			width: 100%;
-        }
-		img{
-			width: 40%;
-		}
-    </style>
-
-
-</head>
-
-<body onload="init()">
-  <div data-role="page">
-
-    <div data-role="header">
-      <h1>Lista Personas</h1>
-    </div>
-
-    <div data-role="main" class="ui-content" id="principal">
-	  <table border="0" cellspacing="0" cellpadding="0" >
-        <tr>
-            <td><img src="img/usuario.png"><p>Pedro Fernandez Ramos</td>
-            <td><img src="img/usuario.png"><p>Antonio Bragueta Suelta</td>
-        </tr>
-		<tr>
-            <td><img src="img/usuario.png"><p>Pepe Gutierrez Alonso</td>
-            <td><img src="img/usuario.png"><p>Ramon Sanchez Medina</td>
-        </tr>
-		<tr>
-            <td><img src="img/usuario.png"><p>Raul Hijon Calero</td>
-            <td><img src="img/usuario.png"><p>Ricardo Alvarez Munoz</td>
-        </tr>
-		<tr>
-            <td><img src="img/usuario.png"><p>Rocio Moro Alonso</td>
-            <td><img src="img/usuario.png"><p>Soledad Gonzales Gomez</td>
-        </tr>
-        
-    </table>
-
-    </div>
-	
-	
-	
-
-    <div data-role="footer" data-position="fixed">
-      <div data-role="navbar" data-iconpos="top">
-        <ul>
-          <li><a id="btnInicio" data-icon="home" onclick="btnInicioClick();" class="ui-btn-active">Inicio</a></li>
-          <li><a id="btnCalendario"  data-icon="calendar">Calendario</a></li>
-          <li><a id="btnNoticias" data-icon="comment">Noticias</a></li>
-          <li><a id="btnPerfil" data-icon="user">Perfil</a></li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-</body>
-</html>
+<table data-role="table" data-model="reflow">
+  <tbody>
+    <tr>
+      <td class="celda" onclick="itemPersonaClick();">
+        <img class="persona" src="img/usuario.png">
+        <p>Pedro Fernandez Ramos</p>
+      </td>
+      <td class="celda" onclick="itemPersonaClick();">
+        <img class="persona" src="img/usuario.png">
+        <p>Antonio Bragueta Suelta</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="celda" onclick="itemPersonaClick();">
+        <img class="persona" src="img/usuario.png">
+        <p>Pepe Gutierrez Alonso</td>
+        <td class="celda" onclick="itemPersonaClick();">
+          <img class="persona" src="img/usuario.png">
+          <p>Ramon Sanchez Medina</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="celda" onclick="itemPersonaClick();">
+          <img class="persona" src="img/usuario.png">
+          <p>Raul Hijon Calero</p>
+        </td>
+        <td class="celda" onclick="itemPersonaClick();">
+          <img class="persona" src="img/usuario.png">
+          <p>Ricardo Alvarez Munoz</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="celda" onclick="itemPersonaClick();">
+          <img class="persona" src="img/usuario.png">
+          <p>Rocio Moro Alonso</p>
+        </td>
+        <td class="celda" onclick="itemPersonaClick();">
+          <img class="persona" src="img/usuario.png">
+          <p>Soledad Gonzales Gomez</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>

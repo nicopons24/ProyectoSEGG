@@ -1,7 +1,9 @@
 function btnInicioClick() {
 	$("#title").text(function(i, text) {
+		var days=["Lun", "Mar","Mie","Jue","Vie","Sab","Dom"];
+		var months = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
 		var today = new Date();
-		return today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+		return days[today.getDay()]+" " + today.getDate() + ' de ' + months[(today.getMonth() + 1)] + ' de ' + today.getFullYear();
 	});
 
 	$.ajax({
@@ -54,6 +56,42 @@ function btnPersonasClick(){
 	});
 	$.ajax({
 		url : 'listaPersonas.html',
+		success : function(data) {
+			$(".ui-content").html(data);
+		}
+	});
+}
+
+function itemPersonaClick(){
+	$("#title").text(function(i, text) {
+		return "Persona";
+	});
+	$.ajax({
+		url : 'personaDetalle.html',
+		success : function(data) {
+			$(".ui-content").html(data);
+		}
+	});
+};
+
+function bntPersonaHistorialClick(){
+	$("#title").text(function(i, text) {
+		return "Ficha Médica";
+	});
+	$.ajax({
+		url : 'personaFichaMedica.html',
+		success : function(data) {
+			$(".ui-content").html(data);
+		}
+	});
+}
+
+function btnCalendarioClick(){
+	$("#title").text(function(i, text) {
+		return "Calendario";
+	});
+	$.ajax({
+		url : 'calendaro.html',
 		success : function(data) {
 			$(".ui-content").html(data);
 		}

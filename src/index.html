@@ -4,6 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/btnAddStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/listaPersonasStyle.css">
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="js/funcionBotones.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -14,7 +15,7 @@
 	<body onload="init();">
 		<div data-role="page" id="main">
 
-			<div data-role="header" data-tap-toggle="false">
+			<div data-theme="b" data-role="header"  data-position="fixed" data-tap-toggle="false">
 				<h1 id="title">App SEGG</h1>
 			</div>
 
@@ -22,14 +23,14 @@
 				<!--Se ira cambiando segun el boton del menu que se pulse-->
 			</div>
 
-			<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<div data-role="footer" data-theme="b" data-position="fixed" data-tap-toggle="false">
 				<div data-role="navbar" data-iconpos="top">
 					<ul>
 						<li>
 							<a id="btnInicio" data-icon="home" onclick="btnInicioClick();" class="ui-btn-active">Inicio</a>
 						</li>
 						<li>
-							<a id="btnCalendario"  data-icon="calendar">Calendario</a>
+							<a id="btnCalendario"  data-icon="calendar" onclick="btnCalendarioClick();">Calendario</a>
 						</li>
 						<li>
 							<a id="btnNoticias" data-icon="comment" onclick="btnNoticiasClick();">Noticias</a>
